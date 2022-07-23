@@ -1,0 +1,9 @@
+C:\Users\bdadmin\source\repos\CloudRockersSearchEngine\CloudRockers.Domain\obj\Debug\netstandard2.0\CloudRockers.Domain.csprojAssemblyReference.cache
+C:\Users\bdadmin\source\repos\CloudRockersSearchEngine\CloudRockers.Domain\obj\Debug\netstandard2.0\CloudRockers.Domain.csproj.CoreCompileInputs.cache
+C:\Users\bdadmin\source\repos\CloudRockersSearchEngine\CloudRockers.Domain\obj\Debug\netstandard2.0\CloudRockers.Domain.AssemblyInfoInputs.cache
+C:\Users\bdadmin\source\repos\CloudRockersSearchEngine\CloudRockers.Domain\obj\Debug\netstandard2.0\CloudRockers.Domain.AssemblyInfo.cs
+C:\Users\bdadmin\source\repos\CloudRockersSearchEngine\CloudRockers.Domain\bin\Debug\netstandard2.0\CloudRockers.Domain.deps.json
+C:\Users\bdadmin\source\repos\CloudRockersSearchEngine\CloudRockers.Domain\bin\Debug\netstandard2.0\CloudRockers.Domain.dll
+C:\Users\bdadmin\source\repos\CloudRockersSearchEngine\CloudRockers.Domain\bin\Debug\netstandard2.0\CloudRockers.Domain.pdb
+C:\Users\bdadmin\source\repos\CloudRockersSearchEngine\CloudRockers.Domain\obj\Debug\netstandard2.0\CloudRockers.Domain.dll
+C:\Users\bdadmin\source\repos\CloudRockersSearchEngine\CloudRockers.Domain\obj\Debug\netstandard2.0\CloudRockers.Domain.pdb

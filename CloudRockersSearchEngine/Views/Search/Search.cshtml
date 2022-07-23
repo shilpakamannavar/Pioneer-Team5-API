@@ -1,0 +1,65 @@
+﻿@model IEnumerable<CloudRockers.Domain.Models.SearchResultModel>
+
+@{
+    ViewData["Title"] = "Search";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Search</h2>
+<div class="search_wrap">
+    <input class="form-control col-md-11" type="text" placeholder="Search" aria-label="Search" id="txtSearch" />
+    <button type="submit" class="btn btn-primary col-md-1" onclick="btnSearch()">
+        Search
+    </button>
+</div>
+
+<div class="results_wrap">
+    @foreach (var item in Model)
+    {
+        <div class="result_box">
+            <div class="result_img">
+                @if (item.FilePath.Contains(".png", StringComparison.OrdinalIgnoreCase))
+                {
+                    <a href="@item.FilePath" target="_blank">
+                        <img class="img-responsive result_img" alt="image not found" src="@item.FilePath" />
+                    </a>
+                }
+                else if (item.FilePath.Contains(".doc", StringComparison.OrdinalIgnoreCase) || item.FilePath.Contains(".docx", StringComparison.OrdinalIgnoreCase))
+                {
+                    var newPath = "https://docs.google.com/gview?url=" + item.FilePath + "&embedded=true";
+                    <a href="@newPath" target="_blank">
+                        <iframe src="@newPath" style="width:.webkit-fill-available" height="250"></iframe>
+                    </a>
+                }
+                else
+                {
+                    <iframe src="@item.FilePath" style="width:.webkit-fill-available" height="250"></iframe>
+                }
+
+            </div>
+            <div class="searched_data" id="divSearchedData">
+                <ul>
+                    <li>
+                        <b>File Name : @item.FileName </b>
+                    </li>
+                    <li>
+                        <b>File Path : @item.FilePath </b>
+                    </li>
+                    <hr />
+                    @if (string.IsNullOrEmpty(item.HighLightedText))
+                    {
+                        <li>
+                            @item.Description
+                        </li>
+                    }
+                    else
+                    {
+                        <li>@Html.Raw(@item.HighLightedText)</li>
+                    }
+                </ul>
+            </div>
+        </div>
+    }
+
+</div>
+
